@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--    <item android:title="Login"-->
+<!--        android:id="@+id/home"-->
+<!--        android:icon="@drawable/baseline_home_24"-->
+<!--        />-->
+    <item android:title="Movie"
+        android:id="@+id/Movie"
+        android:icon="@drawable/baseline_movie_24"
+        />
+    <item android:title="Profile"
+        android:id="@+id/Profile"
+        android:icon="@drawable/baseline_person_4_24"
+        />
+
+
+</menu>

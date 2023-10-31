@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/teal_200"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bagian_atas"
+        android:layout_width="410dp"
+        android:layout_height="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <TextView
+            android:id="@+id/welcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME,"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="21dp"
+            />
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="94dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="9dp"
+            android:text="Nauval"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--ScrollView-->
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/bagian_atas"
+        app:layout_constraintTop_toBottomOf="@+id/bagian_atas">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CSLY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bagian_atas"
+            android:paddingBottom="120dp"
+            >
+
+            <TextView
+                android:id="@+id/Top_movie_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Movie"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginStart="42dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="28dp"
+                android:textColor="@color/black"
+                />
+
+            <!--  Movie 1  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_1"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toStartOf="@id/Top_movie_tv"
+                app:layout_constraintTop_toBottomOf="@id/Top_movie_tv"
+                android:layout_marginTop="13dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster1"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film"
+                    android:text="Bytmeh"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  Movie 2  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_2"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toEndOf="@id/movie_1"
+                app:layout_constraintTop_toBottomOf="@id/Top_movie_tv"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="28dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film_2"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster2"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film_2"
+                    android:text="Terrifier"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img_2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  Movie 3  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_3"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toStartOf="@id/movie_1"
+                app:layout_constraintTop_toBottomOf="@id/movie_1"
+                android:layout_marginTop="13dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film_3"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster3"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film_3"
+                    android:text="The Strangers"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img_3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img_3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  Movie 4  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_4"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toEndOf="@id/movie_1"
+                app:layout_constraintTop_toBottomOf="@id/movie_2"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="28dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film_4"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster4"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film_4"
+                    android:text="Out Of The Dark"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img_4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img_4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  Movie 5  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_5"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toStartOf="@id/movie_1"
+                app:layout_constraintTop_toBottomOf="@id/movie_3"
+                android:layout_marginTop="13dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film_5"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster5"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film_5"
+                    android:text="The 5th Wave"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img_5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--  Movie 6  -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie_6"
+                android:layout_width="150dp"
+                android:layout_height="237dp"
+                app:layout_constraintStart_toEndOf="@id/movie_1"
+                app:layout_constraintTop_toBottomOf="@id/movie_4"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="28dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_film_6"
+                    android:layout_width="150dp"
+                    android:layout_height="189dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/poster6"
+
+                    />
+                <TextView
+                    android:id="@+id/film_title_tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_film_6"
+                    android:text="Tsunami"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/star_img_6"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/star_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9/5"
+                    android:textSize="9sp"
+                    app:layout_constraintStart_toEndOf="@id/star_img_6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
